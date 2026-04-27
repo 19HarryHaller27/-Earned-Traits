@@ -1,0 +1,28 @@
+[
+  {
+    "enabled": true,
+    "ingredientPattern": "_B_,_M_,_C_",
+    "ingredients": {
+      "B": { "type": "item", "code": "game:butterfly-dead-*", "quantity": 1 },
+      "M": { "type": "item", "code": "game:redmeat-raw", "quantity": 1 },
+      "C": { "type": "block", "code": "game:flower-catmint-free", "quantity": 1 }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "speedmeat1-from-redmeat",
+    "output": { "type": "item", "code": "speedmeat1-raw", "quantity": 1 }
+  },
+  {
+    "enabled": true,
+    "ingredientPattern": "_B_,_M_,_C_",
+    "ingredients": {
+      "B": { "type": "item", "code": "game:butterfly-dead-*", "quantity": 1 },
+      "M": { "type": "item", "code": "game:bushmeat-raw", "quantity": 1 },
+      "C": { "type": "block", "code": "game:flower-catmint-free", "quantity": 1 }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "speedmeat1-from-bushmeat",
+    "output": { "type": "item", "code": "speedmeat1-raw", "quantity": 1 }
+  }
+]

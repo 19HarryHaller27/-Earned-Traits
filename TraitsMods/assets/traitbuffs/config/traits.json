@@ -1,0 +1,32 @@
+[
+  {
+    "code": "traitbuffs-speedtraining",
+    "type": "positive",
+    "attributes": {}
+  },
+  {
+    "code": "traitbuffs-meatspeed",
+    "type": "positive",
+    "attributes": {}
+  },
+  {
+    "code": "traitbuffs-speedbar",
+    "type": "positive",
+    "attributes": {}
+  },
+  {
+    "code": "traitbuffs-meathp",
+    "type": "positive",
+    "attributes": {}
+  },
+  {
+    "code": "traitbuffs-healthtraining",
+    "type": "positive",
+    "attributes": {}
+  },
+  {
+    "code": "traitbuffs-healthbar",
+    "type": "positive",
+    "attributes": {}
+  }
+]

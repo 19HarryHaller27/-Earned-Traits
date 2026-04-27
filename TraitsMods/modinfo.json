@@ -1,0 +1,11 @@
+{
+  "type": "code",
+  "modid": "traitbuffs",
+  "name": "Earned Traits",
+  "authors": ["Squidbat"],
+  "description": "Designed as a barebones framework for modders. Earned-trait loop: special foods and manuals grant permanent bonuses and an Character panel; layout for JSON traits, items, recipes, and C# (characterTraits, EntityStats, max health). 1.22+.",
+  "version": "1.0.0",
+  "dependencies": {
+    "game": "1.22.0"
+  }
+}

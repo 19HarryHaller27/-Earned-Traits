@@ -1,0 +1,40 @@
+[
+  {
+    "code": "stinkbait-speedmeat1x1",
+    "perishableProps": {
+      "freshHours": { "avg": 36 },
+      "transitionHours": { "avg": 24 },
+      "transitionRatio": 0.1,
+      "transitionedStack": { "type": "item", "code": "game:rot" }
+    },
+    "shape": { "base": "game:block/food/meal/liquid" },
+    "ingredients": [
+      {
+        "code": "water",
+        "validStacks": [ { "type": "item", "code": "game:waterportion" } ],
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "portionSizeLitres": 1
+      },
+      {
+        "code": "fennel",
+        "validStacks": [
+          { "type": "item", "code": "game:vegetable-fennel" },
+          { "type": "item", "code": "game:spice-licorice-raw" }
+        ],
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "code": "meat",
+        "validStacks": [
+          { "type": "item", "code": "speedmeat1-raw" },
+          { "type": "item", "code": "speedmeat1-cooked" }
+        ],
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
+    "cooksInto": { "type": "item", "code": "game:fishingbait-redmeat", "quantity": 4 }
+  }
+]

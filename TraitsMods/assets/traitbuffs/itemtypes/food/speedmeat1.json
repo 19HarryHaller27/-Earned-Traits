@@ -1,0 +1,100 @@
+{
+  "code": "speedmeat1",
+  "maxstacksize": 64,
+  "classByType": {
+    "speedmeat1-cooked": "ItemCookedSpeedmeat"
+  },
+  "behaviors": [
+    { "name": "GroundStorable", "properties": { "layout": "Quadrants", "collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.125, "z2": 1 } } }
+  ],
+  "attributes": {
+    "foodTags": [ "meat" ],
+    "nutritionPropsWhenInMeal": { "satiety": 420, "foodcategory": "Protein" },
+    "inPiePropertiesByType": {
+      "*-raw": { "texture": "block/food/pie/fill-redmeat", "partType": "Filling", "mixingCodes": [ "potpie" ] }
+    },
+    "inContainerTextureByType": {
+      "*-raw": { "base": "game:block/wood/barrel/{type}-redmeat" },
+      "*-cooked": { "base": "game:block/wood/barrel/{type}-redmeat" }
+    },
+    "inFirePitProps": {
+      "transform": {
+        "scale": 0.9,
+        "origin": { "x": 0.5, "y": 0.0625, "z": 0.5 },
+        "translation": { "x": 0.03125, "y": 0.3125, "z": 0 },
+        "rotation": { "x": 0, "y": 53, "z": 90 }
+      },
+      "useFirepitModel": "Spit"
+    },
+    "displaycaseable": true,
+    "shelvable": true,
+    "displayable": {
+      "shelf": {
+        "size": { "width": 6, "height": 1, "length": 4 },
+        "transform": { "translation": { "x": 0.06, "y": 0, "z": 0.03125 } }
+      }
+    },
+    "handbook": {
+      "groupBy": [ "speedmeat1-*" ]
+    }
+  },
+  "variantgroups": [ { "code": "type", "states": [ "raw", "cooked" ] } ],
+  "shape": { "base": "game:item/food/meat/red" },
+  "texturesbytype": {
+    "speedmeat1-raw": { "meat": { "base": "game:item/food/meat/cooked" } },
+    "speedmeat1-cooked": { "meat": { "base": "game:item/food/meat/cooked" } }
+  },
+  "creativeinventory": { "general": [ "*" ] },
+  "nutritionPropsByType": {
+    "speedmeat1-cooked": { "satiety": 280, "health": 0, "foodcategory": "Protein" }
+  },
+  "transitionablePropsByType": {
+    "*-raw": [
+      {
+        "type": "Perish",
+        "freshHours": { "avg": 36 },
+        "transitionHours": { "avg": 24 },
+        "transitionedStack": { "type": "item", "code": "game:rot" },
+        "transitionRatio": 1
+      }
+    ],
+    "*-cooked": [
+      {
+        "type": "Perish",
+        "freshHours": { "avg": 120 },
+        "spoilHours": { "avg": 36 },
+        "transitionedStack": { "type": "item", "code": "game:rot" },
+        "transitionRatio": 1
+      }
+    ]
+  },
+  "materialDensity": 600,
+  "guiTransform": {
+    "translation": { "x": 0.5, "y": 0, "z": 0 },
+    "rotation": { "x": 171, "y": -122, "z": 33 },
+    "origin": { "x": 0.4, "y": 0.08, "z": 0.5 },
+    "scale": 4.72
+  },
+  "tpHandTransform": {
+    "translation": { "x": -0.1, "y": 0.26, "z": -0.04 },
+    "rotation": { "x": -78, "y": 15, "z": 0 },
+    "origin": { "x": 0.23, "y": 0, "z": 0.13 },
+    "scale": 0.92
+  },
+  "groundTransform": {
+    "translation": { "x": 0, "y": 0, "z": 0 },
+    "rotation": { "x": 180, "y": 33, "z": -180 },
+    "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+    "scale": 5
+  },
+  "combustiblePropsByType": {
+    "speedmeat1-raw": {
+      "meltingPoint": 150,
+      "meltingDuration": 30,
+      "smeltedRatio": 1,
+      "smeltingType": "cook",
+      "smeltedStack": { "type": "item", "code": "speedmeat1-cooked" },
+      "requiresContainer": false
+    }
+  }
+}

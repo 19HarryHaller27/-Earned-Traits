@@ -1,0 +1,59 @@
+{
+  "code": "granolabar-health",
+  "class": "ItemGranolaBarHealth",
+  "maxstacksize": 24,
+  "behaviors": [
+    { "name": "GroundStorable", "properties": { "layout": "Quadrants", "collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.125, "z2": 1 } } }
+  ],
+  "attributes": {
+    "foodTags": [ "grain", "fruit", "protein" ],
+    "displaycaseable": true,
+    "shelvable": true,
+    "displayable": {
+      "shelf": {
+        "size": { "width": 4, "height": 2, "length": 5 }
+      }
+    },
+    "handbook": {
+      "groupBy": [ "granolabar-health" ]
+    }
+  },
+  "shape": { "base": "game:item/food/bread/sunflowerbread" },
+  "textures": {
+    "bread": { "base": "game:item/food/grain/sunflowerbread1" }
+  },
+  "creativeinventory": { "general": [ "*" ], "items": [ "*" ] },
+  "nutritionProps": {
+    "satiety": 1200,
+    "health": 2,
+    "foodcategory": "Grain"
+  },
+  "transitionableProps": [
+    {
+      "type": "Perish",
+      "freshHours": { "avg": 720 },
+      "transitionHours": { "avg": 72 },
+      "transitionedStack": { "type": "item", "code": "game:rot" },
+      "transitionRatio": 1
+    }
+  ],
+  "materialDensity": 200,
+  "guiTransform": {
+    "translation": { "x": 0, "y": 0, "z": 0 },
+    "rotation": { "x": -30, "y": 26, "z": 180 },
+    "origin": { "x": 0.52, "y": 0.07, "z": 0.5 },
+    "scale": 4.9
+  },
+  "groundTransform": {
+    "translation": { "x": 0, "y": 0, "z": 0 },
+    "rotation": { "x": 0, "y": 0, "z": 1 },
+    "origin": { "x": 0.5, "y": 0, "z": 0.5 },
+    "scale": 4.5
+  },
+  "tpHandTransform": {
+    "translation": { "x": -0.54, "y": -0.16, "z": -0.4 },
+    "rotation": { "x": 88, "y": -85, "z": 2 },
+    "origin": { "x": 0.5, "y": 0.13, "z": 0.5 },
+    "scale": 1
+  }
+}

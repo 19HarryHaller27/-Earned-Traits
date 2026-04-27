@@ -1,0 +1,28 @@
+[
+  {
+    "enabled": true,
+    "ingredientPattern": "_B_,_M_,_C_",
+    "ingredients": {
+      "B": { "type": "item", "code": "game:butterfly-dead-*", "quantity": 1 },
+      "M": { "type": "item", "code": "game:redmeat-raw", "quantity": 1 },
+      "C": { "type": "block", "code": "game:flower-mugwort-free", "quantity": 1 }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "healthmeat1-from-redmeat",
+    "output": { "type": "item", "code": "healthmeat1-raw", "quantity": 1 }
+  },
+  {
+    "enabled": true,
+    "ingredientPattern": "_B_,_M_,_C_",
+    "ingredients": {
+      "B": { "type": "item", "code": "game:butterfly-dead-*", "quantity": 1 },
+      "M": { "type": "item", "code": "game:bushmeat-raw", "quantity": 1 },
+      "C": { "type": "block", "code": "game:flower-mugwort-free", "quantity": 1 }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "healthmeat1-from-bushmeat",
+    "output": { "type": "item", "code": "healthmeat1-raw", "quantity": 1 }
+  }
+]

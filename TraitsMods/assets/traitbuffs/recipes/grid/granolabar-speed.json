@@ -1,0 +1,32 @@
+[
+  {
+    "enabled": true,
+    "ingredientPattern": "MBF\u0009ESR\u0009LHG",
+    "ingredients": {
+      "M": {
+        "type": "item",
+        "code": "trainingmanual-speed",
+        "quantity": 1,
+        "returnedStack": { "type": "item", "code": "trainingmanual-speed", "quantity": 1 }
+      },
+      "B": { "type": "item", "code": "speedmeat1-cooked", "quantity": 1 },
+      "F": { "type": "item", "code": "game:fruit-*", "quantity": 4 },
+      "E": { "type": "item", "code": "game:seeds-*", "quantity": 4 },
+      "S": { "type": "item", "code": "game:ingot-steel", "quantity": 1 },
+      "R": { "type": "item", "code": "game:fat", "quantity": 2 },
+      "L": { "type": "item", "code": "game:powder-lapislazuli", "quantity": 1 },
+      "H": { "type": "block", "code": "game:bowl-*-fired" },
+      "G": { "type": "item", "code": "game:flour-*", "quantity": 4 }
+    },
+    "attributes": {
+      "liquidContainerProps": {
+        "requiresContent": { "type": "item", "code": "game:honeyportion" },
+        "requiresLitres": 0.25
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "traitbuffs-granolabar-speed",
+    "output": { "type": "item", "code": "granolabar-speed", "quantity": 1 }
+  }
+]

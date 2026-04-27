@@ -1,0 +1,34 @@
+[
+  {
+    "enabled": true,
+    "ingredientPattern": "LI_,PC_,M__",
+    "ingredients": {
+      "L": {
+        "type": "item",
+        "code": "game:leather-normal-*",
+        "name": "topc",
+        "allowedVariants": [ "plain", "orange", "black", "red", "blue", "purple", "pink", "white", "yellow", "gray", "green" ],
+        "quantity": 1
+      },
+      "M": {
+        "type": "item",
+        "code": "game:leather-normal-*",
+        "name": "botc",
+        "allowedVariants": [ "plain", "orange", "black", "red", "blue", "purple", "pink", "white", "yellow", "gray", "green" ],
+        "quantity": 1
+      },
+      "P": { "type": "item", "code": "game:paper-parchment", "quantity": 8 },
+      "I": {
+        "type": "item",
+        "code": "game:inkandquill",
+        "quantity": 1,
+        "returnedStack": { "type": "item", "code": "game:inkandquill", "quantity": 1 }
+      },
+      "C": { "type": "item", "code": "game:powder-iron-raw", "quantity": 1 }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "training-manual-health-ii",
+    "output": { "type": "item", "code": "trainingmanual-health", "quantity": 1 }
+  }
+]
